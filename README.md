@@ -1,22 +1,11 @@
-# tv-web
+# nuxtjs-boilerplate
 
-> My striking Nuxt.js project
+> Got fed up with making same things over and over.
+> there's sign up, sign in, sign out made with jwt and stuff
 
 ## Build Setup
+npm install
 
-``` bash
-# install dependencies
-$ yarn install
 
-# serve with hot reload at localhost:3000
-$ yarn run dev
-
-# build for production and launch server
-$ yarn run build
-$ yarn start
-
-# generate static project
-$ yarn run generate
-```
-
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+and you are good to go
+build your app
