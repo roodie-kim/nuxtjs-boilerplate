@@ -25,6 +25,7 @@
 
 <script>
 export default {
+    middleware: 'guest',
     data () {
         return {
             user: {
@@ -38,6 +39,7 @@ export default {
             const response = await this.$store.dispatch('signUp', this.user)
             if (response.status) {
                 this.$store.dispatch('readUser')
+                this.$router.push('/')
             }
         }
     }

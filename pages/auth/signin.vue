@@ -1,6 +1,6 @@
 <template>
     <div>
-        <form @submit.prevent="signUp">
+        <form @submit.prevent="signIn">
             <input
                 v-model="user.email"
                 type="email"
@@ -20,6 +20,7 @@
 
 <script>
 export default {
+    middleware: 'guest',
     data () {
         return {
             user: {
@@ -33,6 +34,7 @@ export default {
             const response = await this.$store.dispatch('signIn', this.user)
             if (response.status) {
                 this.$store.dispatch('readUser')
+                this.$router.push('/')
             }
         }
     }
